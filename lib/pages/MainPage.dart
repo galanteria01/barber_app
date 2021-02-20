@@ -1,3 +1,4 @@
+import 'package:barber_app/cards/QueueCard.dart';
 import 'package:barber_app/cards/ShopBarberCards.dart';
 import 'package:flutter/material.dart';
 
@@ -38,20 +39,24 @@ class _MainPageState extends State<MainPage> {
                           ],
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 16, 16, 0),
-                        child: CircleAvatar(
-                          backgroundImage: AssetImage("assets/Ellipse 6.png"),
-                          minRadius: 28,
+                      GestureDetector(
+                        onTap: () { Navigator.pushNamed(context, '/about'); },
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(0, 16, 16, 0),
+                          child: CircleAvatar(
+                            backgroundImage: AssetImage("assets/Ellipse 6.png"),
+                            minRadius: 28,
+
+                          ),
                         ),
                       ),
                     ],
                   )
               ),
               SizedBox(height: 42,),
-              // QueueCard(),
+              QueueCard(),
               // CategoryCard(),
-              ShopBarberCards()
+              ShopBarberCards(),
             ],
           ),
         ),

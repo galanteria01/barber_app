@@ -1,6 +1,8 @@
 import 'package:barber_app/cards/CategoryCard.dart';
 import 'package:barber_app/cards/QueueCard.dart';
 import 'package:barber_app/cards/ShopBarberCards.dart';
+import 'package:barber_app/pages/Bookings.dart';
+import 'package:barber_app/pages/Notifications.dart';
 import 'package:flutter/material.dart';
 
 import 'MainPage.dart';
@@ -16,8 +18,8 @@ class _HomeState extends State<Home> {
 
   List<Widget> tabPages = [
     MainPage(),
-    MainPage(),
-    MainPage(),
+    Bookings(),
+    Notifications(),
   ];
 
   @override
