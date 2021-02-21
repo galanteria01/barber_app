@@ -7,6 +7,7 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
+        resizeToAvoidBottomPadding: false,
         body: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -25,14 +26,14 @@ class Login extends StatelessWidget {
                      "Barber",
                       style: TextStyle(
                         fontSize: 36.0,
-                        color: Colors.pinkAccent
+                        color: Colors.redAccent
                       ),
                     ),
                     Text(
                         "Booking",
                         style: TextStyle(
                           fontSize: 36.0,
-                          color: Colors.pinkAccent
+                          color: Colors.redAccent
                       ),
                     ),
                   ],
@@ -57,16 +58,16 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 172,),
+                SizedBox(height: 166,),
                 RaisedButton(
                   child: Text(" Next ",style: TextStyle(fontSize: 24),),
                   onPressed: () {
                     Navigator.pushNamed(context, "/home");
                   },
-                  color: Color(0xffff4081),
+                  color: Color(0xffef5350),
                   textColor: Colors.white,
                   splashColor: Colors.grey,
-                  padding: EdgeInsets.fromLTRB(108, 10, 108, 10),
+                  padding: EdgeInsets.fromLTRB(108, 14, 108, 14),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0)
                   ),

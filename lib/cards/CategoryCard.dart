@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CategoryCard extends StatelessWidget {
+  String imagePath;
+  String text;
+  CategoryCard({this.text, this.imagePath});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,9 +15,9 @@ class CategoryCard extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: Column(
             children: [
-              Image(image: AssetImage("assets/Location-Svg.png"),),
+              Image(image: AssetImage(imagePath),),
               SizedBox(height: 16,),
-              Text("Near Me")
+              Text(text)
             ],
           ),
         )

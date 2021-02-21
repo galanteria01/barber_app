@@ -1,6 +1,3 @@
-import 'package:barber_app/cards/CategoryCard.dart';
-import 'package:barber_app/cards/QueueCard.dart';
-import 'package:barber_app/cards/ShopBarberCards.dart';
 import 'package:barber_app/pages/Bookings.dart';
 import 'package:barber_app/pages/Notifications.dart';
 import 'package:flutter/material.dart';
@@ -45,26 +42,31 @@ class _HomeState extends State<Home> {
           controller: _pageController,
         ),
         bottomNavigationBar: Container(
-          height: 90.0,
+          height: 72.0,
           child: BottomNavigationBar(
             currentIndex: _index,
             onTap: onTabTapped,
-            elevation: 24.0,
-            selectedItemColor: Colors.blueAccent,
             showSelectedLabels: false,
             showUnselectedLabels: false,
-            unselectedItemColor: Colors.grey,
+            selectedIconTheme: IconThemeData(
+              size: 36,
+              color: Colors.redAccent
+            ),
+            unselectedIconTheme: IconThemeData(
+              size: 28,
+            ),
+            elevation: 24.0,
             items: [
               BottomNavigationBarItem(
-                  icon: Image(image: AssetImage("assets/Group 1.png")),
+                  icon: Icon(Icons.home),
                   label: "Home",
               ),
               BottomNavigationBarItem(
-                  icon: Image(image: AssetImage("assets/Icon awesome-book.png")),
+                  icon: Icon(Icons.book),
                   label: "More"
               ),
               BottomNavigationBarItem(
-                  icon: Image(image: AssetImage("assets/k.png")),
+                  icon: Icon(Icons.notification_important),
                   label: "Notifications"
               ),
             ],

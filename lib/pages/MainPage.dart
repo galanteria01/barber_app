@@ -1,4 +1,6 @@
+import 'package:barber_app/cards/CategoryCard.dart';
 import 'package:barber_app/cards/QueueCard.dart';
+import 'package:barber_app/cards/RoundedImageCard.dart';
 import 'package:barber_app/cards/ShopBarberCards.dart';
 import 'package:flutter/material.dart';
 
@@ -53,10 +55,23 @@ class _MainPageState extends State<MainPage> {
                     ],
                   )
               ),
-              SizedBox(height: 42,),
+              SizedBox(height: 24,),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Now you're in",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300),),
+                  Text("4th queue",style: TextStyle(fontSize: 32,fontWeight: FontWeight.w600),)
+                ],
+              ),
               QueueCard(),
-              // CategoryCard(),
-              ShopBarberCards(),
+              Text("Discover By Categories"),
+              Row(
+                children: [
+                  CategoryCard(),
+                  CategoryCard(),
+                  CategoryCard(),
+                ],
+              )
             ],
           ),
         ),
