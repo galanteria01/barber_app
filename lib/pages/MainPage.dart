@@ -64,14 +64,27 @@ class _MainPageState extends State<MainPage> {
                 ],
               ),
               QueueCard(),
-              Text("Discover By Categories"),
+              Text("Discover By Categories",style: TextStyle(fontWeight: FontWeight.w700,fontSize: 20),),
+              SizedBox(height: 12,),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  CategoryCard(),
-                  CategoryCard(),
-                  CategoryCard(),
+                  GestureDetector(child: CategoryCard(imagePath: "assets/Location-Svg.png",text: "Near Me",)),
+                  GestureDetector(child: CategoryCard(imagePath: "assets/Outline.png",text: "Top Barbers",)),
+                  GestureDetector(child: CategoryCard(imagePath: "assets/Heart-Svg.png",text: "Favourites",)),
+                ],
+              ),
+              SizedBox(height: 12,),
+              Text("Recent Bookings",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700),),
+              SizedBox(height: 14,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  RoundedImageCard(height: 165,width: 165,radius: 16,),
+                  RoundedImageCard(height: 165,width: 165,radius: 16,)
                 ],
               )
+
             ],
           ),
         ),
