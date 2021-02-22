@@ -1,3 +1,4 @@
+import 'package:barber_app/cards/BookingsCard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,17 @@ class _BookingsState extends State<Bookings> {
           backgroundColor: Colors.white,
           centerTitle: true,
           leading: Image(image: AssetImage("assets/Group 2215.png"),),
+        ),
+        body: Container(
+          child: Column(
+            children: [
+              BookingsCard(),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Divider(color: Colors.black,),
+              ),
+            ],
+          ),
         ),
       ),
     );

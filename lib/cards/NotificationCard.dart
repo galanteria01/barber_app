@@ -18,10 +18,11 @@ class NotificationCard extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    RoundedImageCard(height: 90,width: 90,radius: 12,),
-                    SizedBox(width: 20,),
+                    Align(child: RoundedImageCard(height: 90,width: 90,radius: 12,),alignment: Alignment.center,),
+                    SizedBox(width: 32,),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Dee's Shop",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),
                         SizedBox(height: 10,),
@@ -35,6 +36,7 @@ class NotificationCard extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Text("Yesterday"),
+                        SizedBox(height: 32,),
                         Image(image: AssetImage("assets/Icon awesome-money-bill.png"))
                       ],
                     )

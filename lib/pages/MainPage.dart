@@ -14,6 +14,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
+        resizeToAvoidBottomPadding: false,
         body: SafeArea(
           child: Column(
             children: [
@@ -55,7 +56,28 @@ class _MainPageState extends State<MainPage> {
                     ],
                   )
               ),
-              SizedBox(height: 24,),
+              SizedBox(height: 12,),
+              Container(
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 4,
+                      offset: Offset(0, 6),
+                      // changes position of shadow
+                    ),
+                  ],
+                ),
+                child: Divider(
+                  height: 1,
+                  indent: 15,
+                  endIndent: 15,
+                  thickness: 1,
+                  color: Colors.transparent,
+                ),
+              ),
+              SizedBox(height: 16,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

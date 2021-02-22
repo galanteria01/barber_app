@@ -20,7 +20,12 @@ class _NotificationsState extends State<Notifications> {
             leading: Image(image: AssetImage("assets/Icon ionic-ios-notifications.png"),),
           ),
         body: Container(
-          child: NotificationCard(),
+          child: Column(
+            children: [
+              NotificationCard(),
+
+            ],
+          ),
         ),
       )
     );
