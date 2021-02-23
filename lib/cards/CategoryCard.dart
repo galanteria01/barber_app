@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class CategoryCard extends StatelessWidget {
   String imagePath;
   String text;
-  CategoryCard({this.text, this.imagePath});
+  int widthGiven;
+  CategoryCard({this.text, this.imagePath,this.widthGiven});
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: widthGiven.toDouble(),
       child: Card(
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16)

@@ -44,6 +44,7 @@ class _HomeState extends State<Home> {
         bottomNavigationBar: Container(
           height: 72.0,
           child: BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
             currentIndex: _index,
             onTap: onTabTapped,
             showSelectedLabels: false,
