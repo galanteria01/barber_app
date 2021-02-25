@@ -1,3 +1,4 @@
+import 'package:barber_app/cards/RoundedImageCard.dart';
 import 'package:flutter/material.dart';
 
 class Sallon extends StatelessWidget {
@@ -6,7 +7,13 @@ class Sallon extends StatelessWidget {
     return Container(
       child: Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: true,
+          toolbarHeight: 84,
           backgroundColor: Colors.white,
+          centerTitle: true,
+          actions: [
+            Image(image: AssetImage("assets/Filter.png"),)
+          ],
         ),
         body: SafeArea(
           child: Padding(
@@ -15,17 +22,19 @@ class Sallon extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(6.0),
-                  child: Image(image: AssetImage("assets/sample.jpg"),height: 300,width: 300,),
+                  child: RoundedImageCard(height: 300,width: 300,radius: 16,),
                 ),
+                SizedBox(height: 16,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Image(image: AssetImage("assets/sample.jpg"),height: 80,width: 80,),
-                    Image(image: AssetImage("assets/sample.jpg"),height: 80,width: 80,),
-                    Image(image: AssetImage("assets/sample.jpg"),height: 80,width: 80,),
-                    Image(image: AssetImage("assets/sample.jpg"),height: 80,width: 80,)
+                    RoundedImageCard(height: 80,width: 80,radius: 16,),
+                    RoundedImageCard(height: 80,width: 80,radius: 16,),
+                    RoundedImageCard(height: 80,width: 80,radius: 16,),
+                    RoundedImageCard(height: 80,width: 80,radius: 16,),
                   ],
                 ),
+                SizedBox(height: 16,),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
                   child: Row(
@@ -76,13 +85,22 @@ class Sallon extends StatelessWidget {
                         padding: EdgeInsets.all(6),
                         child: Row(
                           children: [
-                            Text("4.5",style: TextStyle(color: Colors.white,fontSize: 8),),
+                            Text("4.5",style: TextStyle(color: Colors.white,fontSize: 12),),
                             SizedBox(width: 18,),
-                            Icon(Icons.star,color: Colors.white,size: 8,)
+                            Icon(Icons.star,color: Colors.white,size: 12,)
                           ],
                         ),
                       ),
-                    Text("102 ratings and 12 reviews",style: TextStyle(fontSize: 8,fontWeight: FontWeight.w200),)
+                    SizedBox(width: 12,),
+                    GestureDetector(
+                        child: Text(
+                          "102 ratings and 12 reviews",
+                          style: TextStyle(
+                              fontSize: 8,
+                              fontWeight: FontWeight.w200
+                          )
+                          ,)
+                    ),
                   ],
                 ),
                 SizedBox(height: 42,),
@@ -94,7 +112,7 @@ class Sallon extends StatelessWidget {
                     borderRadius: BorderRadius.circular(24.0)
                   ),
                   color: Colors.redAccent,
-                  padding: EdgeInsets.fromLTRB(108, 24, 108, 24),
+                  padding: EdgeInsets.fromLTRB(120, 24, 120, 24),
                 )
               ],
             ),

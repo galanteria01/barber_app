@@ -18,7 +18,9 @@ class _BookingsState extends State<Bookings> {
           title: Text("Bookings",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 24),),
           backgroundColor: Colors.white,
           centerTitle: true,
-          leading: Image(image: AssetImage("assets/Group 2215.png"),),
+          actions: [
+            Image(image: AssetImage("assets/Group 2215.png"),)
+          ],
         ),
         body: Container(
           child: Column(
