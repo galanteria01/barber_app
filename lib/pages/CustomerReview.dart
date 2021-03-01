@@ -3,6 +3,7 @@ import 'package:barber_app/cards/RoundedImageCard.dart';
 import 'package:flutter/material.dart';
 
 class CustomerReview extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,16 +21,34 @@ class CustomerReview extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(28, 8, 28, 0),
           child: Column(
             children: [
-              Text("Customer Reviews"),
+              Align(
+                  child: Text("Customer Reviews",style: TextStyle(fontSize: 24,fontWeight: FontWeight.w600)),
+                alignment: Alignment.centerLeft,
+              ),
               Row(
                 children: [
                   CustomStarRating(starRating: 4,iconSize: 24,),
-                  Text("4 out of 5")
+                  Text(
+                    "4 out of 5",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.grey[600]
+                    ),)
                 ],
               ),
-              Text("70 global ratings"),
+              Text(
+                "70 global ratings",
+                style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w300,
+                    color: Colors.grey[600]),
+              ),
               Divider(color: Colors.grey,),
-              Text("By features"),
+              Align(
+                  child: Text("By features"),
+                alignment: Alignment.centerLeft,
+              ),
               Row(
                 children: [
                   Text("Flavor"),
