@@ -1,4 +1,4 @@
-import 'package:barber_app/cards/NotificationCard.dart';
+import 'package:barber_app/cards/notification_card.dart';
 import 'package:flutter/material.dart';
 
 class Notifications extends StatefulWidget {

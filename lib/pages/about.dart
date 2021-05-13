@@ -6,7 +6,7 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           automaticallyImplyLeading: true,
           toolbarHeight: 84,

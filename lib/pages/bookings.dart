@@ -1,4 +1,4 @@
-import 'package:barber_app/cards/BookingsCard.dart';
+import 'package:barber_app/cards/bookings_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

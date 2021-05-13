@@ -1,4 +1,4 @@
-import 'package:barber_app/cards/RoundedImageCard.dart';
+import 'package:barber_app/cards/rounded_image.dart';
 import 'package:flutter/material.dart';
 
 class NotificationCard extends StatelessWidget {

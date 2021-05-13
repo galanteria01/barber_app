@@ -1,7 +1,7 @@
-import 'package:barber_app/cards/CategoryCard.dart';
-import 'package:barber_app/cards/QueueCard.dart';
-import 'package:barber_app/cards/RoundedImageCard.dart';
-import 'package:barber_app/cards/ShopBarberCards.dart';
+import 'package:barber_app/cards/category_card.dart';
+import 'package:barber_app/cards/queue_card.dart';
+import 'package:barber_app/cards/rounded_image.dart';
+import 'package:barber_app/cards/shop_barber_cards.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
         body: SafeArea(
           child: Column(
             children: [

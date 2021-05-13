@@ -1,5 +1,5 @@
-import 'package:barber_app/CustomComponent/CustomStarRating.dart';
-import 'package:barber_app/cards/RoundedImageCard.dart';
+import 'package:barber_app/custom_components/custom_star_rating.dart';
+import 'package:barber_app/cards/rounded_image.dart';
 import 'package:flutter/material.dart';
 
 class CustomerReview extends StatelessWidget {

@@ -1,9 +1,9 @@
-import 'package:barber_app/pages/About.dart';
-import 'package:barber_app/pages/CustomerReview.dart';
-import 'package:barber_app/pages/Filter.dart';
-import 'package:barber_app/pages/Home.dart';
-import 'package:barber_app/pages/Login.dart';
-import 'package:barber_app/pages/Sallon.dart';
+import 'package:barber_app/pages/about.dart';
+import 'package:barber_app/pages/customer_review.dart';
+import 'package:barber_app/pages/filter.dart';
+import 'package:barber_app/pages/home.dart';
+import 'package:barber_app/pages/login.dart';
+import 'package:barber_app/pages/saloon.dart';
 import 'package:flutter/material.dart';
 
 void main() {

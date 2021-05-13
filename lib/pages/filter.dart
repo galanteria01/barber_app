@@ -1,6 +1,6 @@
-import 'package:barber_app/CustomComponent/CustomStarRating.dart';
-import 'package:barber_app/cards/CategoryCard.dart';
-import 'package:barber_app/cards/PastBookingsCard.dart';
+import 'package:barber_app/custom_components/custom_star_rating.dart';
+import 'package:barber_app/cards/category_card.dart';
+import 'package:barber_app/cards/past_booking_card.dart';
 import 'package:flutter/material.dart';
 
 class Filter extends StatefulWidget {

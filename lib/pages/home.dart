@@ -1,8 +1,8 @@
-import 'package:barber_app/pages/Bookings.dart';
-import 'package:barber_app/pages/Notifications.dart';
+import 'package:barber_app/pages/bookings.dart';
+import 'package:barber_app/pages/notifications.dart';
 import 'package:flutter/material.dart';
 
-import 'MainPage.dart';
+import 'main_page.dart';
 
 class Home extends StatefulWidget {
   @override
